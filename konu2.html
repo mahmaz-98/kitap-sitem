@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>3. Konu 2</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konu 2 - Sohbetler</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📘</text></svg>">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="sidebar" id="sidebar">
-    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
-    <input type="text" id="search" placeholder="Ara...">
-    <ul id="toc">
-      <li><a href="index.html">1. Giriş</a></li>
-      <li><a href="konu1.html">2. Konu 1</a></li>
-      <li><a href="konu2.html">3. Konu 2</a></li>
-      <li><a href="sonuc.html">4. Sonuç</a></li>
-    </ul>
-  </div>
-  <main>
-    <h2>3. Konu 2</h2>
-    <p>Konu 2 detayları burada yer alır.</p>
-  </main>
-  <script src="script.js"></script>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+    <div class="sidebar" id="sidebar">
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Ara..." style="width: 100%; padding: 5px;">
+        </div>
+        <a href="index.html">Giriş</a>
+        <a href="konu1.html">Konu 1</a>
+        <a href="konu2.html">Konu 2</a>
+        <a href="sonuc.html">Sonuç</a>
+    </div>
+    <div class="content">
+        <header>Sohbetler</header>
+        <p><strong>Yazar:</strong> Ali Veli</p>
+        <h2>Konu 2</h2>
+        <p>Bu bölümde ikinci sohbet detaylandırılır.</p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,13 +1,13 @@
-function toggleSidebar() {
-  const sidebar = document.getElementById('sidebar');
-  sidebar.classList.toggle('hidden');
-}
 
-document.getElementById('search').addEventListener('input', function () {
-  const filter = this.value.toLowerCase();
-  const items = document.querySelectorAll('#toc li');
-  items.forEach(item => {
-    const text = item.textContent.toLowerCase();
-    item.style.display = text.includes(filter) ? '' : 'none';
-  });
+document.getElementById('menuToggle').addEventListener('click', function () {
+    document.getElementById('sidebar').classList.toggle('open');
+});
+
+document.getElementById('searchInput').addEventListener('input', function () {
+    const filter = this.value.toLowerCase();
+    const links = document.querySelectorAll('.sidebar a');
+    links.forEach(link => {
+        const text = link.textContent.toLowerCase();
+        link.style.display = text.includes(filter) ? '' : 'none';
+    });
 });
